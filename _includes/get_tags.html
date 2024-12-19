@@ -1,0 +1,3 @@
+{%- for tag in include.tags | sort_natural -%}
+<span class="tag" data-tag="{{tag}}">{{ tag }}</span>
+{%- endfor -%}

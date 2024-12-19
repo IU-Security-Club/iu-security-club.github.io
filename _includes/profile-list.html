@@ -1,0 +1,10 @@
+{%- assign exists = false -%}
+{%- for i in include.iterator -%}
+{%- if i.author contains include.profile -%}
+{%- assign authors = i.author -%}
+{%- if exists == false -%}<h3 class="content-type">{{ include.label | capitalize }}</h3><div class="grid -center -top">{%- endif -%}
+{%- assign exists = true -%}
+{%- include item_listing.html item=i -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if exists == true -%}</div>{%- endif -%}

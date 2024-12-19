@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed/cheatsheets.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-19T16:42:21+11:00</updated><id>http://localhost:4000/feed/cheatsheets.xml</id><title type="html">Deakin Infomation Security Club | Cheatsheets</title><subtitle>A university club for hackers, problem solvers and IT security professionals.
+</subtitle><entry><title type="html">bash =&amp;gt; crash course commands</title><link href="http://localhost:4000/kb/cheatsheets/bash" rel="alternate" type="text/html" title="bash =&amp;gt; crash course commands" /><published>2024-12-19T16:42:21+11:00</published><updated>2024-12-19T16:42:21+11:00</updated><id>http://localhost:4000/kb/cheatsheets/bash</id><content type="html" xml:base="http://localhost:4000/kb/cheatsheets/bash"><![CDATA[<blockquote>
+  <p><em>The below content was included as part of the 0x02 session: <code class="language-plaintext highlighter-rouge">#!/bin/bash =&gt; a crash course in bash</code>.</em></p>
+</blockquote>
+
+<h1 id="useful-commands">Useful commands</h1>
+
+<p>You’ll never be able to memorise every single command for everything, but these are pretty major ones for most things.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">command</th>
+      <th style="text-align: center">category</th>
+      <th style="text-align: left">purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">cd</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">navigation</code></td>
+      <td style="text-align: left"><strong>change directory</strong>, allows the user to move around the shell to different locations in the filesystem.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">pwd</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">navigation</code></td>
+      <td style="text-align: left"><strong>print working directory</strong>, notifies the user of the current directory that the shell is in.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">cp</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">files</code></td>
+      <td style="text-align: left"><strong>copy</strong>, copies files in a <code class="language-plaintext highlighter-rouge">&lt;source&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;destination&gt;</code> type format.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">ls</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">files</code></td>
+      <td style="text-align: left"><strong>list</strong>, lists the current files. Also try: <code class="language-plaintext highlighter-rouge">ls -l</code>, and <code class="language-plaintext highlighter-rouge">ls -la</code> for more informative versions.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">rm</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">files</code></td>
+      <td style="text-align: left"><strong>remove</strong>, this isn’t “put it in the recycle bin”, this is destroy off the face of the earth, it doesn’t come with an undo method, so <em>be careful</em>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">touch</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">files</code></td>
+      <td style="text-align: left"><strong>modify timestamps</strong>, techincally this is the intention of the command, but it also is useful just for creating empty files (e.g: <code class="language-plaintext highlighter-rouge">touch blah</code> creates a file called <code class="language-plaintext highlighter-rouge">blah</code>).</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">apt</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">software</code> <code class="language-plaintext highlighter-rouge">updates</code></td>
+      <td style="text-align: left"><a href="https://manpages.ubuntu.com/manpages/xenial/en/man8/apt.8.html"><strong>advanced package tool</strong></a>, used to keep the system up to date. There are many subcommands for this tool. <code class="language-plaintext highlighter-rouge">apt update</code>, <code class="language-plaintext highlighter-rouge">apt upgrade</code>, <code class="language-plaintext highlighter-rouge">apt install</code> are a few handy ones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>and <a href="https://www.tecmint.com/51-useful-lesser-known-commands-for-linux-users/">many</a>, <a href="https://fossbytes.com/a-z-list-linux-command-line-reference/">many</a>, <a href="https://www.howtoforge.com/linux-commands/">more…</a></p>
+
+<p><br /><br /></p>
+
+<h3 id="resources">Resources</h3>
+
+<p><em>If you are interested in finding out more or doing your own research, here are some potential starting points. None of these are mandatory reading and going through all of them in detail is definitely overkill.</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">resource</th>
+      <th style="text-align: left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://ss64.com/bash/syntax-keyboard.html">ss64: Bash Hotkeys</a></td>
+      <td style="text-align: left">A very established cheatsheet with <code class="language-plaintext highlighter-rouge">bash</code> key combinations.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://doc.lagout.org/rtfm-red-team-field-manual.pdf">Red Team Field Manual</a></td>
+      <td style="text-align: left">Lots of security related commands in here, also Windows and Linux-based so check that you’re using the right ones on the right systems.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ryanstutorials.net/linuxtutorial/">Ryan’s Tutorials: Linux Basics</a></td>
+      <td style="text-align: left">Basically a lot of things from the talk, but much more fleshed out and more in depth. Also has other important information.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://ryanstutorials.net/bash-scripting-tutorial/">Ryan’s Tutorials: Bash Scripting</a></td>
+      <td style="text-align: left">A tutorial dedicated specifically to <code class="language-plaintext highlighter-rouge">bash</code> scripting.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">TLDP: Bash Programming</a></td>
+      <td style="text-align: left">A good introduction into scripting.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.linuxjournal.com/article/7385">Linuxjournal: Bash Tips and Tricks</a></td>
+      <td style="text-align: left">Pretty short and sweet, has good explanations of <em>brace expansion</em> and <em>command substitution</em> which are both handy to know.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /></p>
+
+<h3 id="off-the-beaten-path">Off the beaten path</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">resource</th>
+      <th style="text-align: left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://tmuxcheatsheet.com/">tmux cheatsheet</a></td>
+      <td style="text-align: left">A reference guide for <code class="language-plaintext highlighter-rouge">tmux</code> commands. <code class="language-plaintext highlighter-rouge">tmux</code> stands for terminal multiplexer and is a very handy tool for being able to multitask inside a single terminal window. An alternative to <code class="language-plaintext highlighter-rouge">tmux</code> is <code class="language-plaintext highlighter-rouge">screen</code>, but it appears to be harder to get used to, so <code class="language-plaintext highlighter-rouge">tmux</code> is the recommendation here.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /></p>
+
+<h3 id="some-other-things-that-havent-been-covered-to-look-up-yourself-and-try-to-understand">Some other things that haven’t been covered to look up yourself and try to understand:</h3>
+<ul>
+  <li>Fundamentals of Linux (a lot of this gets covered in first year coursework which is why it has been left out of this presentation).
+    <ul>
+      <li>File permissions, what they mean and how to modify them safely.</li>
+      <li>Networking (IP addresses, ports, protocols, etc.)</li>
+    </ul>
+  </li>
+  <li>The meaning and potential consequences of <code class="language-plaintext highlighter-rouge">sudo</code>.</li>
+  <li>How to install and uninstall software in your distribution of Linux.</li>
+  <li>How to use <code class="language-plaintext highlighter-rouge">ssh</code> to connect to remote machines.
+    <ul>
+      <li>How to setup key-based ssh authentication (this can save on typing in passwords all the time. == handy)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h3 id="some-things-to-keep-in-mind">Some things to keep in mind:</h3>
+<ul>
+  <li>Don’t rush.</li>
+  <li>You don’t have to know all of this or even any of it unless you want to.</li>
+  <li>If you keep at it, you will keep learning something new.</li>
+  <li>Pace yourself</li>
+  <li>Stick to what you know when it matters, and find out what you don’t when it doesn’t.</li>
+</ul>]]></content><author><name>phulelouch</name></author><category term="bash" /><category term="shells" /><category term="cli" /><summary type="html"><![CDATA[A list of useful bash commands and some tips and tricks to help you become more efficient using the bash shell.]]></summary></entry><entry><title type="html">Resource Lists</title><link href="http://localhost:4000/kb/cheatsheets/lists" rel="alternate" type="text/html" title="Resource Lists" /><published>2019-06-29T00:00:00+10:00</published><updated>2019-06-29T00:00:00+10:00</updated><id>http://localhost:4000/kb/cheatsheets/lists</id><content type="html" xml:base="http://localhost:4000/kb/cheatsheets/lists"><![CDATA[<p>The following are a few resources that have been compiled by other people on various subjects. Most of them are kept relatively well up to date, but if you want to know about any given topic, these are probably a good place to start if you haven’t got anything else, YMMV.</p>
+
+<p>Contributions welcome!</p>
+
+<h2 id="lists">Lists</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Resource</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://github.com/rmusser01/Infosec_Reference">Infosec_Reference</a> by <a href="https://github.com/rmusser01/">Robert (rmusser01)</a></td>
+      <td style="text-align: left">A highly thorough index of all kinds of security-related content.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://github.com/sindresorhus/awesome">awesome lists</a> by <a href="https://github.com/sindresorhus">Sindresohrus</a></td>
+      <td style="text-align: left">An excellent list of lists, not just limited to security with heaps of content let you self-teach lots of things at least moderately well <br /><br />(the security section is <em><a href="https://github.com/sindresorhus/awesome#security">here</a></em>).<br /><br /> <a href="https://awesomelists.top/">https://awesomelists.top/</a> is an easy way of viewing awesome lists.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://github.com/jlevy/the-art-of-command-line">The Art of Command Line</a></td>
+      <td style="text-align: left">A nice, detailed one-pager on using the command line, some googling is required.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="media">Media</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Resource</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://github.com/PaulSec/awesome-sec-talks">awesome-sec-talks</a></td>
+      <td style="text-align: left">A list of talks dating back to 2012 from various events and conferences from around the world, topics vary.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://risky.biz/netcasts/risky-business/">Risky Business</a></td>
+      <td style="text-align: left">A podcast that IUSECusses the news in infosec each week, based in Australia!</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://infosecindustry.com/podcasts/">Infosec Industry Podcasts</a></td>
+      <td style="text-align: left">An aggregation of various popular podcasts.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA/videos">IppSec on Youtube</a></td>
+      <td style="text-align: left">High-quality demonstrations of previous hackthebox machines.</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>[&quot;phulelouch&quot;]</name></author><category term="references" /><category term="self-development" /><category term="research" /><summary type="html"><![CDATA[The following are a few resources that have been compiled by other people on various subjects. Most of them are kept relatively well up to date, but if you want to know about any given topic, these are probably a good place to start if you haven’t got anything else, YMMV.]]></summary></entry></feed>

@@ -1,0 +1,412 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IUSEC – IU Infomation Security Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.2, user-scalable=0;" />
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/static/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/static/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/static/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="{{site.url}}/static/img/icons/site.webmanifest">
+  <link rel="mask-icon" href="{{site.url}}/static/img/icons/safari-pinned-tab.svg" color="#000033">
+  <link rel="shortcut icon" href="{{site.url}}/static/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="{{site.url}}/static/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A university club for hackers, problem solvers and IT security professionals. Based at IU University in , Victoria.">
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1.2;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: "TopazPlus";
+      src: url(static/fonts/topazplus120010.ttf);
+    }
+
+    :root {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+        section pre {
+            font-size: 8px
+        }
+
+        header .banner {
+            font-size: 7px !important;
+        }
+
+        .tagline, .links, footer {
+            font-size: 8px;
+        }
+
+        pre.attention {
+            font-size: 8px;
+            margin: 0 auto 1.5rem;
+        }
+    }
+
+    body {
+      color: #DDDDDD;
+      position: relative;
+      /* color: #c5c8c6; */
+      /*background-color: #0d0d18;*/
+      background-color: #0c0c0c;
+      max-width: 100%;
+      font-family: "TopazPlus", "Fira Code", "Menlo", "Lucida Console", monospace, Monaco;
+      background-image: url('/static/img/pattern.svg');
+    }
+
+    pre {
+      font-family: "TopazPlus", "Fira Code", "Menlo", "Lucida Console", monospace, Monaco;
+    }
+
+    a {
+      color: #54d7f9;
+      text-decoration: none;
+    }
+
+    .ik, ik {
+      color: #74ee15;
+    }
+
+    y {
+      color: #f0c674;
+    }
+
+    gr {
+      color: #b5bd68;
+    }
+
+    r {
+      color: #9e0034;
+    }
+
+    w {
+      color: #ffffff;
+    }
+
+    pink, .pink {
+      color: #f4b6e5;
+    }
+
+    bb {
+      color: #5cc2ca;
+      /* baby blue */
+    }
+
+    purp, .purp {
+      color: #7a80a2;
+    }
+
+    l {
+      color: #c5c8c6;
+    }
+
+    lg {
+      color: #9de9a9;
+    }
+
+    sea {
+      color: #93ff4c;
+    }
+
+    .container {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    header {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+    }
+
+    .attention {
+      margin: 0 auto 3rem;
+    }
+
+    .links {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .links span {
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cent {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    header pre {
+      display: inline-block;
+    }
+
+    header .banner {
+      font-size: 12px;
+      line-height: .85;
+    }
+
+    header .banner:last-of-type {
+      margin-bottom: 3rem;
+    }
+
+    .ascii-art {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    footer {
+      margin: 3em 0;
+      color: rgba(255,255,255,0.15);
+    }
+
+    #kb-link {
+      display: block;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 34px; height: 34px;
+      opacity: .35;
+      z-index: 4000;
+      transition: opacity 0.1s ease-in-out, width 0.1s, height 0.1s;
+      /* animation: 8s flicker infinite; */
+      animation-delay: 0.1s;
+    }
+
+    #kb-link svg {
+      transition: width 0.1s, height 0.1s;
+      border-radius: 34px;
+    }
+
+    #kb-link:hover {
+      opacity: 1;
+      width: 96px; height: 96px;
+      animation: none;
+      background-position: center center;
+      background: url('https://media.giphy.com/media/RlOAlt0Qmsw4CTIELN/giphy.gif') center -10px;
+      background-size: cover;
+      transition: opacity 0.1s ease-in-out, width 0.1s, height 0.1s;
+    }
+
+    #kb-link:hover:after{
+      content: 'enter the knowledge base --------->';
+      background: #ddd;
+      color: #000;
+      padding: 10px;
+      text-align: right;
+      width: 120px;
+      position: absolute;
+      right: 96px;
+      top: 0;
+      display: block;
+    }
+
+    #kb-link:hover svg {
+      border-radius: 0;
+      width: 96px; height: 96px;
+    }
+
+  </style>
+</head>
+
+<body class="hack dark">
+  <div class="container">
+<header>
+<pre class="ik attention"><center>
+-------------------------------------------------------------------------------
+IU INFORMATION SECURITY CLUB 
+-------------------------------------------------------------------------------
+</center></pre>
+<div class="ascii-art">
+
+<pre class="banner pink" style="display: block; margin: 0 auto; width: 64ch;">
+
+                      .___ ____ ___ 
+                      |   |    |   \
+                      |   |    |   /
+                      |   |    |  / 
+                      |___|______/  
+                                    
+          
+</pre>
+
+<pre class="banner pink" style="display: block; margin: 0 auto; width: 39ch;">
+
+  _____________________________  
+ /   _____/\_   _____/\_   ___ \ 
+ \_____  \  |    __)_ /    \  \/ 
+ /        \ |        \\     \____
+/_______  //_______  / \______  /
+        \/         \/         \/ 
+
+</pre>
+<pre class="banner pink" style="display: block; margin: 0 auto; width: 54ch;">
+
+  _________ .____     ____ _____________ 
+  \_   ___ \|    |   |    |   \______   \
+  /    \  \/|    |   |    |   /|    |  _/
+  \     \___|    |___|    |  / |    |   \
+   \______  /_______ \______/  |______  /
+          \/        \/                \/ 
+  
+
+</pre>
+</div>
+</header>
+<pre class="tagline"><center>
+
+A university club for hackers, problem solvers and IT security professionals.
+</center></pre>
+
+<section>
+<div class="purp links"><center>
+<br/>
+<pre>--------------------------------------------------------------------------------</pre>
+<span>| <a href="https://www.facebook.com/people/IU-Security/100063602197620/">FACEBOOK</a>  |</span>
+<pre>--------------------------------------------------------------------------------</pre>
+</center></div>
+ <!--<a href="/archive.html">ARCHIVE</a> -->
+ <!-- may need a section for video links in the future. -->
+
+<pre><center>
+<ik>[+]== <y>WHO WE ARE</y> ============================================================[+]
+|                                                                              |
+|</ik> We are a student led club who focus on the hands-on practical skills of      <ik>|
+|</ik> ethical hacking and developing the skills needed to get started in           <ik>|
+|</ik> cyber security. We welcome anyone and everyone regardless of skill.          <ik>|
+|</ik> We aim to deliver a wide range of topics in the infosec world including      <ik>|
+|</ik> forensics, web application testing, binary exploitation and more.            <ik>|
+|</ik> You can read /kb for more.                                                   <ik>|
+|                                                                              |
+[+]==========================================================================[+]</ik>
+</center></pre>
+
+<pre><center>
+<ik>[+]== <y>WHAT WE DO</y> ============================================================[+]
+|                                                                              |
+|</ik> At IUSEC we offer workshops, talks, competitions and more!                   <ik>|
+|</ik> We host weekly meetups on the  campus on <a>Wednesday evenings</a>.                 <ik>|
+|                                                                              |
+[+]==========================================================================[+]</ik>
+</center></pre>
+
+
+<pre><center>
+<ik>[+]== <y>CONTACT US</y> ============================================================[+]
+|                                                                              |
+|</ik> If you wish to get in contact, reach out on Facebook below.                  <ik>|
+|</ik>                                                                              <ik>|
+|</ik>   &gt; <a href="https://www.facebook.com/groups/IUInfoSecClub/">Facebook</a><ik>                                                                 |
+|                                                                              |
+[+]==========================================================================[+]</ik>
+</center></pre>
+
+<pre><center>
+<ik>[+]== <y>EVENTS</y> ================================================================[+]</ik>
+</center></pre>
+
+<center>
+    <!-- Calendar -->
+    <section id="calendar">
+      <div class="container" style="filter: invert(100%) hue-rotate(40deg) saturate(100%);">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-12 text-center tcc">
+            <iframe src="{{ site.calendar.embed }}"
+              style="border: 0; max-width: 100%; width: 640px;" width="640" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
+</section>
+
+<footer>
+<pre><center>
+IUSEC is run by students for students and is a non-profit making organisation.
+</center></pre>
+</footer>
+
+</div>
+</body>
+
+<a class="wrap" id="kb-link" href="{{site.url}}/kb">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="34px" height="34px" viewBox="0 0 34 34" enable-background="new 0 0 34 34" xml:space="preserve">
+      <path fill="#fff" d="M0,0v34h34V0H0z M7.875,16.14h9.702l-2.625-2.625l1.406-1.406l5.016,5.016l-5.016,5.016l-1.406-1.406 l2.578-2.625H7.875V16.14z M25.874,24.108c0,0.532-0.203,1-0.609,1.406c-0.406,0.406-0.875,0.609-1.406,0.609H9.89 c-0.531,0-1-0.203-1.405-0.609c-0.406-0.406-0.609-0.875-0.609-1.406v-3.984H9.89v3.984h13.969V10.14H9.89v3.984H7.875V10.14 c0-0.531,0.203-1,0.609-1.406C8.89,8.328,9.358,8.124,9.89,8.124h13.969c0.531,0,1,0.204,1.406,0.609 c0.406,0.406,0.609,0.875,0.609,1.406V24.108z"/>
+  </svg>
+</a>
+
+<!-- Did you enjoy that? Maybe take a look at our knowledge base too: {{site.url}}/kb/ -->
+
+</html>

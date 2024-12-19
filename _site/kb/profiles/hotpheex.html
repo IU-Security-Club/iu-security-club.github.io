@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deakin Infomation Security Club - phulelouch</title>
+    <meta name="viewport" content="width=640;initial-scale=1;" />
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/static/img/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/static/img/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/static/img/icons/favicon-16x16.png" />
+    <link rel="manifest" href="http://localhost:4000/static/img/icons/site.webmanifest" />
+    <link rel="mask-icon" href="http://localhost:4000/static/img/icons/safari-pinned-tab.svg" color="#000033" />
+    <link rel="shortcut icon" href="http://localhost:4000/static/img/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/hack.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/dark.css" />
+    <link rel="stylesheet" href="http://localhost:4000/static/css/IUSEC.css" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="http://localhost:4000/static/img/icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta content="http://localhost:4000/static/img/og-image.png" property="og:image">
+    <meta content="Deakin Infomation Security Club" property="og:site_name">
+    <meta content="phulelouch" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="A university club for hackers, problem solvers and IT security professionals." property="og:description">
+    <meta content="http://localhost:4000/kb/profiles/hotpheex" property="og:url">
+    <meta content="2024-12-19T16:42:21+11:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/atom.xml" title="Deakin Infomation Security Club" />
+    <style>
+    .highlight .hll { background-color: #49483e }
+.highlight  { background: #272822; color: #f8f8f2 }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .ch { color: #75715e } /* Comment.Hashbang */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .cpf { color: #75715e } /* Comment.PreprocFile */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .gd { color: #f92672 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gi { color: #a6e22e } /* Generic.Inserted */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #75715e } /* Generic.Subheading */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mb { color: #ae81ff } /* Literal.Number.Bin */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sa { color: #e6db74 } /* Literal.String.Affix */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .dl { color: #e6db74 } /* Literal.String.Delimiter */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #a6e22e } /* Name.Function.Magic */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .vm { color: #f8f8f2 } /* Name.Variable.Magic */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+</style>
+</head>
+<body class="dark">
+<div class="container">
+    <header>
+    <a class="wrap" href="http://localhost:4000">
+        <img src="http://localhost:4000/static/img/IUSEC-white.png" /><h1 class="title">Knowledge Base</h1></a>
+</header>
+    <div class="grid">
+        <div class="content cell -12of12">
+            <section class="main profile">
+                <h1><a class="wrap minimal-backlink" href="/kb/profiles/hotpheex/..">&lt; </a>&nbsp;~/kb/profiles/hotpheex</h1><h1 class="author-name">phulelouch</h1><div>
+                    <div class="user-content">
+                        <p>Ex-IUSEC do-maker, current resident lurker…</p>
+
+                    </div><hr/><div class="container listings" style="padding: 0;"><h3 class="content-type">Cheatsheets</h3><div class="grid -center -top"><div class="item cell -4of12">
+    <div class="card">
+        <header class="card-header"><a href="http://localhost:4000/kb/cheatsheets/bash"><h3 class="title">bash => crash course commands</h3></a></header><div class="card-content">
+            <div class="inner excerpt">A list of useful bash commands and some tips and tricks to help you become more efficient using the bash shell.</div>
+        </div>
+    </div>
+    <!-- <a href="http://localhost:4000/kb/cheatsheets/bash"><h3 class="title">bash => crash course commands</h3></a>
+    <span class="tags">
+        <span class="tag" data-tag="bash">bash</span><span class="tag" data-tag="shells">shells</span><span class="tag" data-tag="cli">cli</span><br/>
+    </span>
+    <div class="excerpt">
+        The below content was included as part of the 0x02 session: #!/bin/bash =&gt; a crash course in bash. Useful commands You’ll never...
+    </div> -->
+</div>
+<div class="item cell -4of12">
+    <div class="card">
+        <header class="card-header"><a href="http://localhost:4000/kb/cheatsheets/lists"><h3 class="title">Resource Lists</h3></a></header><div class="card-content">
+            <div class="inner excerpt">The following are a few resources that have been compiled by other people on various subjects. Most of them are kept relatively well up to date, but if you want to know…</div>
+        </div>
+    </div>
+    <!-- <a href="http://localhost:4000/kb/cheatsheets/lists"><h3 class="title">Resource Lists</h3></a>
+    <span class="tags">
+        <span class="tag" data-tag="references">references</span><span class="tag" data-tag="self-development">self-development</span><span class="tag" data-tag="research">research</span><br/>
+    </span>
+    <div class="excerpt">
+        The following are a few resources that have been compiled by other people on various subjects. Most of them are kept relatively...
+    </div> -->
+</div>
+</div><h3 class="content-type">Workshops</h3><div class="grid -center -top"><div class="item cell -4of12">
+    <div class="card">
+        <header class="card-header"><a href="http://localhost:4000/kb/workshops/setup-a-vm"><h3 class="title">Getting started with VMs for hacking</h3></a></header><div class="card-content">
+            <div class="inner excerpt">Want to get involved in a CTF or practice hacking? You'll probably want a VM! Learn how to get started here!</div>
+        </div>
+    </div>
+    <!-- <a href="http://localhost:4000/kb/workshops/setup-a-vm"><h3 class="title">Getting started with VMs for hacking</h3></a>
+    <span class="tags">
+        <span class="tag" data-tag="beginner">beginner</span><span class="tag" data-tag="vms">vms</span><span class="tag" data-tag="kali">kali</span><br/>
+    </span>
+    <div class="excerpt">
+        > **Before you start:** _You may find that this takes time and you make mistakes, but that's okay! If you are running...
+    </div> -->
+</div>
+</div></div>
+</div>
+            </section>
+            <a class="wrap" href="/kb/profiles/hotpheex/.."><button class="btn btn-block btn-primary btn-ghost">&lt;= return to profiles</button></a>
+        </div>
+    </div>
+    <div class="grid">
+        <footer>
+    <div class="container">
+        <div class="grid">
+            <div class="cell -2of12"></div>
+            <div class="cell -8of12">
+                <p>This knowledge base is maintained by IUSEC members, information contained within is provided on a best-effort basis. There are no warranties for accuracy.</p>
+            </div>
+            <div class="cell -2of12"></div>
+        </div>
+    </div>
+</footer>
+    </div>
+</div>
+</body>
+</html>

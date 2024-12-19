@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body class="dark">
+<div class="container">
+    {%- include header.html -%}
+    <div class="grid">
+        {%- include sidebar.html -%}
+        <div class="content cell -10of12">
+            {{content}}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+</body>
+</html>

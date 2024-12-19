@@ -1,0 +1,36 @@
+{%- if include.author[0] -%}
+{%- assign lastAuthor = include.author | last -%}
+{%- for author in include.author -%}
+    {%- assign profiles = site.profiles | where: "title", author -%}
+    {%- assign profile = profiles[0] -%}
+    {%- if profile.title != nil -%}
+        {%- if author != lastAuthor -%}
+        <a class="author-link" href="{{ site.url }}{{profile.url}}">{{ author }}</a>,&nbsp;
+        {%- else -%}
+        <a class="author-link" href="{{ site.url }}{{profile.url}}">{{ author }}</a>
+        {%- endif -%}
+    {%- elsif site.data.authors[author] -%}
+        {%- if author != lastAuthor -%}
+        <a class="author-link" href="{{ site.data.authors[author].url }}" target="_blank">{{ author }}</a>,&nbsp;
+        {%- else -%}
+        <a class="author-link" href="{{ site.data.authors[author].url }}" target="_blank">{{ author }}</a>
+        {%- endif -%}
+    {%- else -%}
+        {%- if author != lastAuthor -%}
+        {{ author }},&nbsp;
+        {%- else -%}
+        {{ author }}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- else -%}
+    {%- assign profiles = site.profiles | where: "title", include.author -%}
+    {%- assign profile = profiles[0] -%}
+    {%- if profile.title != nil -%}
+    <a class="author-link" href="{{ site.url }}{{ profile.url }}">{{include.author}}</a>
+    {%- elsif site.data.authors[include.author] -%}
+    <a class="author-link" href="{{ site.data.authors[include.author].url }}" target="_blank">{{ include.author }}</a>
+    {%- else -%}
+    {{ include.author }}
+    {%- endif -%}
+{%- endif -%}

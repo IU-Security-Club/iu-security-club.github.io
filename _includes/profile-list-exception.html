@@ -1,0 +1,9 @@
+{%- assign articles = site.articles | where: "author", include.author -%}
+{%- assign cheatsheets = site.cheatsheets | where: "author", include.author -%}
+{%- assign sessions = site.sessions | where: "author", include.author -%}
+{%- assign workshops = site.workshops | where: "author", include.author -%}
+{%- if articles.size == 0 and cheatsheets.size == 0 and sessions.size == 0 and workshops.size == 0 -%}
+<div class="spacer"></div>
+{%- else -%}
+<hr/>
+{%- endif -%}

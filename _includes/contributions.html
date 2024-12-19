@@ -1,0 +1,13 @@
+{%- assign articles = site.articles -%}
+{%- assign cheatsheets = site.cheatsheets -%}
+{%- assign sessions = site.sessions -%}
+{%- assign workshops = site.workshops -%}
+{%- include profile-list-exception.html author=page.title -%}
+<div class="container listings" style="padding: 0;">
+{%- include profile-list.html label="articles" iterator=site.articles profile=page.title -%}
+{%- include profile-list.html label="cheatsheets" iterator=site.cheatsheets profile=page.title -%}
+{%- include profile-list.html label="pages" iterator=site.pages profile=page.title -%}
+{%- include profile-list.html label="sessions" iterator=site.sessions profile=page.title -%}
+{%- include profile-list.html label="workshops" iterator=site.workshops profile=page.title -%}
+
+</div>

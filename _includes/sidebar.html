@@ -1,0 +1,31 @@
+<div class="menu cell -2of12">
+{%- for item in site.data.menu | first -%}
+{%- if item.label != "posts" and item.type == "main" -%}
+{%- if item.label == page.iterator -%}
+    <a class="menu-item active" href="{{item.index_path}}">{{item.label}} <div class="pull-right">»</div></a>
+{% else %}
+    <a class="menu-item" href="{{item.index_path}}">
+        {{item.label}} <div class="pull-right">»</div>
+    </a>
+{%- endif -%}{%- endif -%}{%- endfor -%}
+<br />
+{%- for item in site.data.menu | first -%}{%- if item.label != "posts" and item.type == "sub" -%}
+{%- if item.label == page.iterator -%}
+    <a class="menu-item active" href="{{item.index_path}}">
+        {{item.label}} <div class="pull-right">»</div>
+    </a>
+{% else %}
+    <a class="menu-item" href="{{item.index_path}}">
+        {{item.label}} <div class="pull-right">»</div>
+    </a>
+{%- endif -%}
+{%- endif -%}{%- endfor -%}
+<br />
+{%- for item in site.data.menu | first -%}
+{%- if item.type == "social" -%}
+    <a class="menu-item" href="{{item.url}}" target="_blank">
+        {{item.label}}<div class="pull-right">↗</div>
+    </a>
+{%- endif -%}
+{%- endfor -%}
+</div>

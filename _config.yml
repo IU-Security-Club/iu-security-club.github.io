@@ -1,0 +1,105 @@
+# _config.yml
+
+title: IU Security Club
+email: 
+repository: 
+description: >
+    A university club for hackers, problem solvers and IT security professionals.
+baseurl: ""
+url: https://IUinfosec.xyz
+timezone: Australia/Melbourne
+
+social:
+    facebook: https://www.facebook.com/people/IU-Security/100063602197620/
+
+calendar:
+    embed: 
+    subscribe: 
+
+plugins:
+    - jekyll-feed
+    - jekyll-github-metadata
+    - jekyll-redirect-from
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jemoji
+
+markdown: kramdown
+
+highlighter: rouge
+
+feed:
+    path: atom.xml
+    collections:
+        - articles
+        - cheatsheets
+        - sessions
+        - workshops
+
+kramdown:
+    input: GFM
+
+sass:
+    style: compressed
+
+include: ["_pages", "_shortlinks"]
+exclude: ["run.sh", "CONTRIBUTING.MD", "README.md", "Gemfile", "vendor"]
+
+collections_dir: content
+collections:
+    articles:
+        output: true
+        index_path: /kb/articles/
+        permalink: /kb/:collection/:title
+    cheatsheets:
+        output: true
+        index_path: /kb/cheatsheets/
+        permalink: /kb/:collection/:title
+    profiles:
+        output: true
+        index_path: /kb/profiles/
+        permalink: /kb/:collection/:title
+    sessions:
+        output: true
+        index_path: /sessions/
+        permalink: /:collection/:title
+    workshops:
+        output: true
+        index_path: /kb/workshops/
+        permalink: /kb/:collection/:title
+
+defaults:
+    -
+        scope:
+            path: "_articles"
+        values:
+            layout: "content"
+            type: "article"
+            author: "anon"
+    -
+        scope:
+            path: "_cheatsheets"
+        values:
+            layout: "content"
+            type: "cheatsheet"
+            author: "anon"
+    -
+        scope:
+            path: "_profiles"
+        values:
+            layout: "profile"
+            type: "profile"
+    -
+        scope:
+            path: "_sessions"
+        values:
+            layout: "content"
+            type: "session"
+            author: "The IUSEC Team"
+    -
+        scope:
+            path: "_workshops"
+        values:
+            layout: "content"
+            type: "workshop"
+            author: "anon"

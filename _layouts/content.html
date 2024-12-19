@@ -1,0 +1,33 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="dark">
+<div class="container">
+    {% include header.html %}
+    <div class="grid">
+        <div class="content cell -12of12">
+            <section class="main">
+                <h1>{%- include return-to-kb.html minimal='1' -%}&nbsp;~{{ page.url }}<br/><br/>{{ page.title }}</h1>
+                {%- unless page.simple -%}
+                <div class="meta">
+                    <div class="date">{{ page.date | date: "%Y-%m-%d" }}</div>&bull;
+                    <div class="author">by {% include get_author.html author=page.author %}</div>
+                    <div class="tags">{%- include get_tags.html tags=page.tags -%}</div>
+                    <hr />
+                </div>
+                {%- endunless -%}
+                <div>
+                {{content}}
+                </div>
+            </section>
+            {% include return-to-kb.html %}
+        </div>
+    </div>
+    <div class="grid">
+        {% include footer.html %}
+    </div>
+</div>
+</body>
+</html>

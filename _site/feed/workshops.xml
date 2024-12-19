@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed/workshops.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-19T16:42:21+11:00</updated><id>http://localhost:4000/feed/workshops.xml</id><title type="html">Deakin Infomation Security Club | Workshops</title><subtitle>A university club for hackers, problem solvers and IT security professionals.
+</subtitle><entry><title type="html">Getting started with VMs for hacking</title><link href="http://localhost:4000/kb/workshops/setup-a-vm" rel="alternate" type="text/html" title="Getting started with VMs for hacking" /><published>2019-06-11T00:00:00+10:00</published><updated>2019-06-11T00:00:00+10:00</updated><id>http://localhost:4000/kb/workshops/setup-a-vm</id><content type="html" xml:base="http://localhost:4000/kb/workshops/setup-a-vm"><![CDATA[<blockquote>
+  <p><strong>Before you start:</strong> <em>You may find that this takes time and you make mistakes, but that’s okay! If you are running into problems and can’t figure out how to solve it yourself, drop a line on FB and someone should be able to help out.</em></p>
+</blockquote>
+
+<h2 id="what-is-a-vm">What is a VM?</h2>
+
+<p>VM means <strong>Virtual Machine</strong>. As the name suggests, it is a virtual representation of a computer system (hardware is emulated by software). When dealing with VMs there are two kinds of machine, the <strong>host</strong>, and the <strong>guest</strong>. The host machine is the physical hardware (such as a laptop or server), that runs the <a href="https://en.wikipedia.org/wiki/Hypervisor">hypervisor</a> software which is needed to run the virtualised guest machines inside of it.</p>
+
+<p>Long story short, for the purposes of this workshop:</p>
+<blockquote>
+  <p><strong>a VM is a <em>sandboxed</em> machine that lives inside your main machine. <br />This is where you will want to do your security stuff.</strong></p>
+</blockquote>
+
+<h2 id="why-do-i-want-one">Why do I want one?</h2>
+
+<p>This is useful because you can install a <em>completely different</em> operating system in a <strong>guest</strong> than the one that is run in the <strong>host</strong>. You will probably want to have this ability so that you can conveniently use hacking tools on your laptop without needing to interfere with the current setup of your <strong>host</strong>.</p>
+
+<p>It’s also often quite easy to mess things up when you’re trying to learn Linux systems for the first time, so virtual machines will allow you to delete and recreate a machine if you make a mistake. <em>(Keep in mind that deleting a VM is kind of like throwing an entire PC into a dumpster – you’ll lose everything)</em>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">VMs == isolation, isolation == safety</code>.</p>
+
+<p>The last thing you want to do is accidentally goof up your everyday system because you were trying to learn something new, only to accidentally backdoor your personal computer :scream:.</p>
+
+<h2 id="enter-kali">Enter Kali</h2>
+
+<blockquote>
+  <p><em>Okay, so we can create virtual machines inside of real machines, so what?</em></p>
+</blockquote>
+
+<p>Well, there’s an operating system that exists called <a href="https://www.kali.org/">Kali</a> which is widely regarded as the most common penetration testing operating system in use. It is preloaded with a large selection of tools that are used to perform all kinds of cybersecurity-related activities.</p>
+
+<p>There are other distributions of Linux that achieve similar goals such as <a href="https://www.parrotsec.org/">ParrotOS</a>, but Kali is probably the best to go with to start out. The reasons are purely because it appears most often in tutorial videos and should make things a little more familiar for absolute beginners. Kali is also the main OS used in cybersecurity virtual learning environments, so it makes sense to pick something that will be used consistently.</p>
+
+<h2 id="what-do-i-need-to-get-started">What do I need to get started?</h2>
+
+<p>You will need:</p>
+
+<ul>
+  <li>Roughly 2 hours if you want to get it all done in one go (this could vary wildly with internet speed and performance of your machine).</li>
+  <li>A machine to install the software and new VM on:
+    <ul>
+      <li>with at least 20GB of storage free</li>
+      <li>minimum of 4GB of RAM (ideally at least 8GB)</li>
+    </ul>
+  </li>
+  <li>Hypervisor software, probably one of either:
+    <ul>
+      <li><a href="https://www.virtualbox.org/">VirtualBox (free)</a> (Windows + macOS + Linux)</li>
+      <li><a href="https://www.vmware.com/products/workstation-pro.html">VMWare Workstation (paid)</a> (Windows + Linux)</li>
+      <li><a href="https://www.vmware.com/au/products/fusion.html">VMWare Fusion (paid)</a> (macOS)</li>
+    </ul>
+  </li>
+  <li><strong>One</strong> of the following operating system ISO images:
+    <ul>
+      <li><a href="https://www.kali.org/downloads/">Kali</a> (get the <code class="language-plaintext highlighter-rouge">Kali Linux 64-Bit</code> version)</li>
+      <li><a href="https://www.parrotsec.org/download.php">ParrotOS</a> (Get the <code class="language-plaintext highlighter-rouge">Security</code> version)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-steps">The steps</h2>
+
+<ol>
+  <li>Download the bits you need: hypervisor + ISO image</li>
+  <li>Install the hypervisor.</li>
+  <li>Once installed, open the hypervisor and create a new machine.
+    <ul>
+      <li>Make sure that you allocate at least a minimum of 1GB (hopefully 4GB) of RAM to the VM.</li>
+      <li>To get the software to install the operating system from the iso you downloaded, you need to configure the machine to use that iso file in the virtual CD drive (essentially putting in the IUSEC to install the OS)</li>
+    </ul>
+  </li>
+  <li>Now that the VM has been created, it needs to be started up to install the OS into it.
+    <ul>
+      <li>On boot, the ISO may give you a choice of either <strong>install</strong> or <strong>graphical install</strong>. If you want to click on things with the mouse, use the keyboard arrows to choose <strong>graphical install</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>This is essentially like a normal OS installation, follow all of the prompts (it’s <em>generally</em> safe to accept the default values but consider what they mean anyway).</p>
+  </li>
+  <li><strong>OPTIONAL</strong> Install vm-tools
+    <ul>
+      <li>If using VirtualBox, in a terminal window of the virtual machine enter:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">apt update</code></li>
+          <li><code class="language-plaintext highlighter-rouge">apt install virtualbox-guest-x11</code></li>
+          <li><code class="language-plaintext highlighter-rouge">reboot</code></li>
+        </ul>
+      </li>
+      <li>If using VMWare, in a terminal window of the virtual machine enter:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">apt update</code></li>
+          <li><code class="language-plaintext highlighter-rouge">apt install open-vm-tools open-vm-tools-desktop</code></li>
+          <li><code class="language-plaintext highlighter-rouge">reboot</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<blockquote>
+  <p><em>Too much to read? Here’s a youtube video (no affiliation, it’s just a decent video).</em></p>
+</blockquote>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XlJ7FsI0wj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr />
+
+<p>After following the above instructions / youtube video you should have a working VM.</p>
+
+<h2 id="okay-now-what">Okay, now what?</h2>
+
+<p>You can (and should) use this virtual environment for all of your CTFs or hacking practice activities. To be able to get the most out of the system it’s probably worth having a good poke around and see what’s on there for you to use.</p>]]></content><author><name>[&quot;phulelouch&quot;]</name></author><category term="beginner" /><category term="vms" /><category term="kali" /><summary type="html"><![CDATA[Want to get involved in a CTF or practice hacking? You'll probably want a VM! Learn how to get started here!]]></summary></entry></feed>

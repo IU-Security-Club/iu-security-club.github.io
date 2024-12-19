@@ -1,0 +1,10 @@
+{%- assign url = page.url -%}
+{%- assign kb_sub = url | split: 'kb' -%}
+<header>
+    <a class="wrap" href="{{site.url}}">
+        <img src="{{site.url}}/static/img/IUSEC-white.png" />
+        {%- if kb_sub[1] -%}
+        <h1 class="title">Knowledge Base</h1>
+        {%- endif -%}
+    </a>
+</header>

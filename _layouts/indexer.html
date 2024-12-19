@@ -1,0 +1,79 @@
+---
+layout: default
+collection: ""
+# Don't read this template, it will make your eyes bleed. Just trust me, it works.
+---
+{%- if page.title -%}
+{%- else -%}
+<h1 class="title">{{ page.iterator }}</h1>
+{%- endif -%}
+{{content}}
+
+{%- if page.sort_condition == "date" -%}
+    {%- assign items = site[page.iterator] | compact | sort: "title" | sort:"date" | reverse -%}
+    {%- if items != nil -%}
+    {%- for item in items -%}
+    {%- assign thisYear = item.date | date: "%Y" -%}
+    {%- if thisYear != currentYear -%}
+        {%- if currentYear -%}
+    </ul></blockquote>
+        {%- endif -%}
+        <h4 class="year">{{ thisYear }}</h4>
+        {%- assign currentYear = thisYear -%}
+    <blockquote>
+    <ul class="listing {{thisYear}}">
+    {%- endif -%}
+        <li><a class="title" href="{{ item.url }}">{{ item.title }}</a><br/><div class="meta">{{ item.date | date: "%d %b %Y" }} &bull; by {% include get_author.html author=item.author %} {% if item.tags.size >= 1 %}&bull; <div class="tags">{%- include get_tags.html tags=item.tags -%}</div>{%- endif -%}</div><div class="excerpt">{{item.content | strip_html | truncatewords: 32}}</div></li>
+        {%- assign lastItem = items | last-%}
+        {%- if item == lastItem -%}
+            </ul></blockquote>
+        {%- endif-%}
+        {%- endfor -%}
+    {%- endif -%}
+{%- elsif page.sort_condition == "simple" -%}
+    {%- assign items = site[page.iterator] | compact | sort_natural: "title" -%}
+    {%- if items != nil -%}
+        {%- for item in items -%}
+        {%- assign thisChar = item.title | slice: 0 | upcase -%}
+        {%- if thisChar != currentChar -%}
+            {%- if currentChar -%}
+        </ul></blockquote>
+            {%- endif -%}
+        <h4 class="alpha">{{ thisChar }}</h4>
+            {%- assign currentChar = thisChar -%}
+        <blockquote class="simple">
+        <ul class="listing {{thisChar}}">
+        {%- endif -%}
+        <li class="narrow">{{firstChar}}  <a class="title" href="{{ item.url }}">{{ item.title }}</a></li>
+        {%- assign lastItem = items | last-%}
+        {%- if item == lastItem -%}
+            </ul></blockquote>
+        {%- endif-%}
+        {%- endfor -%}
+    {%- endif -%}
+{%- elsif page.sort_condition == "a_to_z" or page.sort_condition == nil -%}
+    {%- assign items = site[page.iterator] | compact | sort_natural: "title" -%}
+    {%- if items != nil -%}
+        {%- for item in items -%}
+        {%- assign thisChar = item.title | slice: 0 | upcase -%}
+        {%- if thisChar != currentChar -%}
+            {%- if currentChar -%}
+        </ul></blockquote>
+            {%- endif -%}
+        <h4 class="alpha">{{ thisChar }}</h4>
+            {%- assign currentChar = thisChar -%}
+        <blockquote>
+        <ul class="listing {{thisChar}}">
+        {%- endif -%}
+        <li>{{firstChar}}  <a class="title" href="{{ item.url }}">{{ item.title }}</a><br/><div class="meta">by {% include get_author.html author=item.author %}{% if item.tags.size >= 1 %} &bull; <div class="tags">{%- include get_tags.html tags=item.tags -%}</div>{%- endif -%}</div><div class="excerpt">{{item.description | strip_html | truncatewords: 36}}</div></li>
+        {%- assign lastItem = items | last-%}
+        {%- if item == lastItem -%}
+            </ul></blockquote>
+        {%- endif-%}
+        {%- endfor -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- if items.size == 0 and page.iterator != "home" -%}
+<div class="alert alert-error">There don't appear to be any {{ page.iterator }} right now :(</div>
+{%- endif -%}

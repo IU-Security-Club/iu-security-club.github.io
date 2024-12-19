@@ -1,0 +1,22 @@
+{%- assign url = page.url -%}
+{%- assign kb_sub = url | split: 'kb' -%}
+
+{%- if include.minimal != '1' -%}
+    {%- if page.collection -%}
+    <a class="wrap" href="{{page.url}}/.."><button class="btn btn-block btn-primary btn-ghost">&lt;= return to {{ page.collection }}</button></a>
+    {%- elsif kb_sub[1] and page.collection -%}
+    <a class="wrap" href="{{page.url}}/.."><button class="btn btn-block btn-primary btn-ghost">&lt;= return to {{page.collection}}</button></a>
+    {%- else -%}
+    <a class="wrap" href="{{site.url}}/kb"><button class="btn btn-block btn-primary btn-ghost">&lt;= return to knowledge base</button></a>
+    {%- endif -%}
+{%- endif -%}
+
+{%- if include.minimal -%}
+    {%- if page.collection -%}
+    <a class="wrap minimal-backlink" href="{{page.url}}/..">&lt; </a>
+    {%- elsif kb_sub[1] and page.collection -%}
+    <a class="wrap minimal-backlink" href="{{page.url}}/..">&lt; </a>
+    {%- else -%}
+    <a class="wrap minimal-backlink" href="{{site.url}}/kb">&lt; </a>
+    {%- endif -%}
+{%- endif -%}

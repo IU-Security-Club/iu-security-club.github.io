@@ -1,0 +1,18 @@
+---
+# IUSEC.scss
+---
+
+$font-headings: "TopazPlus", "Menlo", "Lucida Console", monospace, Monaco;
+$font-body: "Fira Code", "Menlo", "Lucida Console", monospace, Monaco;
+$font-monospace: "Fira Code", "Menlo", "Lucida Console", monospace, Monaco;
+
+$query-smaller: "screen and (min-width: 768px)";
+
+$color-subtle: #525252;
+$color-green: #74ee15;
+$color-purple: #7a80a2;
+$color-pink: #f4b6e5;
+$color-blue: #54d7f9;
+
+@import "custom";
+@import "markdown";
