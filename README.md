@@ -6,7 +6,7 @@
 </center>
 
 > _Please note: If you're not overwhelmingly technical and the below information seems way over your head, that's okay!
-> Message `@phulelouch` on [slack](https://IUSECclub.slack.com), and we'll be able to submit your contributions for you._
+> Message `@phulelouch` on [fb](https://IUSECclub.fb.com), and we'll be able to submit your contributions for you._
 
 ## How do I run this locally?
 
