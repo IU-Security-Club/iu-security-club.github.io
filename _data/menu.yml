@@ -28,12 +28,6 @@
 - label: facebook
   type: social
   url: https://facebook.com/people/IU-Security/100063602197620/
-- label: fb
-  type: social
-  url: https://IUSECclub.fb.com/
-- label: linkedin
-  type: social
-  url: https://www.linkedin.com/company/IU-information-security-club/
 - label: youtube
   type: social
   url: https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs
