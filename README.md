@@ -1,5 +1,5 @@
 <center>
-    <img src="https://raw.githubusercontent.com/IUInfoSecClub/IUInfoSecClub.github.io/master/static/img/og-image.png" style="object-fit: cover; height:300px; width: 100%;">
+    <img src="https://raw.githubusercontent.com/IU-Security-Club/iu-security-club.github.io/refs/heads/main/static/img/IUSEC-white2.png" style="object-fit: cover; height:300px; width: 100%;">
     <h1>IUSEC: the website</h1>
     <p>This github repo contains the <a href="http://jekyllrb.com/">jekyll</a> blog for the <a href="https://iu-security-club.github.io"><strong>IUSEC</strong> website</a>.</p>
     <br/>
@@ -23,11 +23,11 @@ You may also want to install docker-compose for future Docker escapades!
 (If using Windows, commands must be run in a Powershell terminal)
 * Clone a local copy of the repository 
 
-`git clone https://github.com/IUInfoSecClub/IUInfoSecClub.github.io`
+`git clone https://github.com/IUInfoSecClub/iu-security-club.github.io`
 
 * Change directories into your newly created directory
 
-`cd IUInfoSecClub.github.io`
+`cd iu-security-club.github.io`
 
 * Start a Jekyll container, mounting the current directory in the container's Jekyll directory
 
