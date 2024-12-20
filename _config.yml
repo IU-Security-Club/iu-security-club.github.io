@@ -6,7 +6,7 @@ repository:
 description: >
     A university club for hackers, problem solvers and IT security professionals.
 baseurl: ""
-url: https://IUinfosec.xyz
+url: https://iu-security-club.github.io
 timezone: Australia/Melbourne
 
 social:

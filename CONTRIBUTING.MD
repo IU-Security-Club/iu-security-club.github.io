@@ -1,3 +1,3 @@
 # Contributing
 
-Please refer to the [contributing](https://IUinfosec.xyz/kb/contributing) page on our website.
+Please refer to the [contributing](https://iu-security-club.github.io/kb/contributing) page on our website.

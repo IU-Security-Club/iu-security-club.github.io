@@ -1,7 +1,7 @@
 <center>
     <img src="https://raw.githubusercontent.com/IUInfoSecClub/IUInfoSecClub.github.io/master/static/img/og-image.png" style="object-fit: cover; height:300px; width: 100%;">
     <h1>IUSEC: the website</h1>
-    <p>This github repo contains the <a href="http://jekyllrb.com/">jekyll</a> blog for the <a href="https://IUinfosec.xyz"><strong>IUSEC</strong> website</a>.</p>
+    <p>This github repo contains the <a href="http://jekyllrb.com/">jekyll</a> blog for the <a href="https://iu-security-club.github.io"><strong>IUSEC</strong> website</a>.</p>
     <br/>
 </center>
 
