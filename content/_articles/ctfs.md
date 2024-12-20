@@ -48,4 +48,4 @@ CTFs are a great way to learn new skills by exposing yourself to challenges you'
 
 - [CTFTime](https://ctftime.org/event/list/upcoming) has a good list of upcoming events
 
-- The `#ctfs` channel on our [fb]({{site.social.fb}}) is a good place to rally around and get a team put together. <br/>_(If you get stuck on anything it's also a great place to ask for help)_.
+- The `#ctfs` channel on our [fb](https://www.facebook.com/people/IU-Security/100063602197620/) is a good place to rally around and get a team put together. <br/>_(If you get stuck on anything it's also a great place to ask for help)_.
