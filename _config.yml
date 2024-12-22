@@ -13,7 +13,7 @@ social:
     facebook: https://www.facebook.com/people/IU-Security/100063602197620/
 
 calendar:
-    embed: 
+    embed: https://calendar.google.com/calendar/embed?src=41c2061e0ea77f22024f9c21fc5e81f81b7f7cb0016d88c7b50666ab64bf9e11%40group.calendar.google.com&ctz=Asia%2FHo_Chi_Minh
     subscribe: 
 
 plugins:
