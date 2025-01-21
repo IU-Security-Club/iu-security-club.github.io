@@ -34,7 +34,7 @@ Binary challenges revolve around compromising a compiled program by supplying it
 
 #### Reverse Engineering
 
-Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format to understand the functionality of a given program such that you can identify deeper issues.
+The process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format to understand the functionality of a given program such that you can identify deeper issues.
 
 #### Misc
 
