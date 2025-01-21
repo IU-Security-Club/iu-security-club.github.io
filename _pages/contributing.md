@@ -51,7 +51,7 @@ git checkout -b new_profile
 
 * Create a new text file in your preferred text editor, and copy the template below into it:
 
-```
+
 ---
 # THIS IS A TEMPLATE FOR A PROFILE, PLEASE COPY THIS FILE AND THEN MAKE CHANGES TO YOUR COPY.
 # DON'T REMOVE THIS FILE.
@@ -65,7 +65,7 @@ title: "Author Name"
 published: false # remove this line to make sure your profile gets published.
 ---
 You can write a bit about yourself here.
-```
+
 
 * Edit the various fields between the `<>` characters with your own details. Don't worry if you don't have a twitter or htb account, just leave them blank for now!
 
