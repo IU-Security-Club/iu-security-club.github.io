@@ -69,7 +69,6 @@ git checkout -b new_profile
         published: false # remove this line to make sure your profile gets published.
         ---
         You can write a bit about yourself here.
-
 ```
 
 * Edit the various fields between the `<>` characters with your own details. Don't worry if you don't have a twitter or htb account, just leave them blank for now!
