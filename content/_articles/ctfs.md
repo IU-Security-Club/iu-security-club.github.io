@@ -32,6 +32,10 @@ These challenges are all about decoding encrypted data to figure out the secret 
 
 Binary challenges revolve around compromising a compiled program by supplying it with specific data in order to violate the intended boundaries of its operation.
 
+#### Reverse Engineering
+
+Reverse Engineering in a CTF is typically the process of taking a compiled (machine code, bytecode) program and converting it back into a more human readable format to understand the functionality of a given program such that you can identify deeper issues.
+
 #### Misc
 
 Anything else that doesn't belong in the above categories usually ends up in Misc. These can vary wildly and are usually good to have a go on if you get stuck in any of the main categories.
