@@ -51,20 +51,22 @@ git checkout -b new_profile
 
 * Create a new text file in your preferred text editor, and copy the template below into it:
 
+```
+    ---
+    # THIS IS A TEMPLATE FOR A PROFILE, PLEASE COPY THIS FILE AND THEN MAKE CHANGES TO YOUR COPY.
+    # DON'T REMOVE THIS FILE.
 
----
-# THIS IS A TEMPLATE FOR A PROFILE, PLEASE COPY THIS FILE AND THEN MAKE CHANGES TO YOUR COPY.
-# DON'T REMOVE THIS FILE.
+    title: "Author Name"
+    # external_url: <a URL somewhere you want your profile to link to>
+    # twitter: <twitter handle>
+    # github: <github handle>
+    # htb: <hackthebox id number>
 
-title: "Author Name"
-# external_url: <a URL somewhere you want your profile to link to>
-# twitter: <twitter handle>
-# github: <github handle>
-# htb: <hackthebox id number>
+    published: false # remove this line to make sure your profile gets published.
+    ---
+    You can write a bit about yourself here.
 
-published: false # remove this line to make sure your profile gets published.
----
-You can write a bit about yourself here.
+```
 
 
 * Edit the various fields between the `<>` characters with your own details. Don't worry if you don't have a twitter or htb account, just leave them blank for now!
@@ -109,7 +111,7 @@ git checkout -b contribute_tutorial
 ```
 
 * Start off by copying the template below to the top of your article and filling in the relevant details:
-
+```
       ---
       title: <title>
       author:
@@ -120,7 +122,7 @@ git checkout -b contribute_tutorial
           - ...
       date: <yyyy-mm-dd>
       ---
-
+```
 * Save the working copy of your funky fresh new post in the appropriate directory, with a meaningful name (no spaces) and with the `.md` file extension:
     * `content/_articles` for Articles
     * `content/_cheatsheets` for Cheatsheets
