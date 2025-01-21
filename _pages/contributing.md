@@ -3,7 +3,7 @@ permalink: /kb/contributing
 layout: content
 title: How to contribute to the Knowledge Base
 simple: true
-date: 2019-08-04
+date: 2025-01-22
 author:
     - phulelouch
 ---
