@@ -15,6 +15,7 @@ If you get stuck with any of the steps below, don't hesitate to shout out on #de
 
 **Note:** Anywhere that you see the `<` or `>` characters, those are for you to swap out with something (do not keep the brackets).
 
+
 ### Prerequisites
 For this recipe we are going to need a few basic ingredients:
 * You will to [create a Github account](https://github.com/join) if you don't have one already.
@@ -23,6 +24,7 @@ For this recipe we are going to need a few basic ingredients:
 * 10 minutes of free time.
 
 <br class="spacer"/>
+
 
 ### Set up a local working copy
 First we need to [fork](https://help.github.com/en/articles/fork-a-repo) the official Github repository so that we can develop our new features under our own account.
@@ -41,16 +43,18 @@ git clone <YOUR URL>
 cd iu-security-club.github.io
 ```
 
+
 ### Add your profile to the KB
 First thing's first, lets add your personal profile to the KB so that your article will link to your deets, and people can easily find all of your awesome contributions!
+
 * Start by creating a new branch for the feature you're adding.
-*It is good practice to never push straight to the master branch. Name your new branch something that makes sense.*
+
+* It is good practice to never push straight to the master branch. Name your new branch something that makes sense.*
 ```
 git checkout -b new_profile
 ```
 
 * Create a new text file in your preferred text editor, and copy the template below into it:
-
 ```
         ---
         # THIS IS A TEMPLATE FOR A PROFILE, PLEASE COPY THIS FILE AND THEN MAKE CHANGES TO YOUR COPY.
@@ -67,7 +71,6 @@ git checkout -b new_profile
         You can write a bit about yourself here.
 
 ```
-
 
 * Edit the various fields between the `<>` characters with your own details. Don't worry if you don't have a twitter or htb account, just leave them blank for now!
 
