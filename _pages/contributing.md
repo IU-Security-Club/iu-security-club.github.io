@@ -44,6 +44,7 @@ cd iu-security-club.github.io
 ```
 
 
+
 ### Add your profile to the KB
 First thing's first, lets add your personal profile to the KB so that your article will link to your deets, and people can easily find all of your awesome contributions!
 
@@ -89,6 +90,7 @@ git commit -m "added <your handle> kb profile"
 ```
 git push origin <branch name>
 ```
+
 
 ### Make that pull request!
 
