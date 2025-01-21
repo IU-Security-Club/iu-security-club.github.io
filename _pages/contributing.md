@@ -27,6 +27,8 @@ For this recipe we are going to need a few basic ingredients:
 ### Set up a local working copy
 First we need to [fork](https://help.github.com/en/articles/fork-a-repo) the official Github repository so that we can develop our new features under our own account.
 
+* Browse to the [iu-security-club.github.io repository](https://github.com/IU-Security-Club/iu-security-club.github.io/), and click the *Fork* button.
+
 * Copy the URL for your newly forked repository (make sure you're copying your personal repository, not the URL for the official one).
 
 * Now in a terminal, use the `git clone` command to download a copy of your new forked repository.
