@@ -97,3 +97,48 @@ Finally, make a pull request to the upstream repository. This is a request for t
 Once your pull request has been made, you will have to wait until one of the official maintainers approves the request to merge your branch into the upstream repository. So sit tight, they'll get to it soon!
 
 <br class="spacer"/>
+
+
+### Contributing to common knowledge base
+
+Now you just need to make some stuff!! And you thank you for that
+
+* As usual when starting on a new feature, create a new branch with a meaningful name. Since we are currently writing this article, I'll call the branch "contribute_tutorial".
+```
+git checkout -b contribute_tutorial
+```
+
+* Start off by copying the template below to the top of your article and filling in the relevant details:
+
+      ---
+      title: <title>
+      author:
+          - <authors handles>
+      tags:
+          - <tag1>
+          - <tag2>
+          - ...
+      date: <yyyy-mm-dd>
+      ---
+
+* Save the working copy of your funky fresh new post in the appropriate directory, with a meaningful name (no spaces) and with the `.md` file extension:
+    * `content/_articles` for Articles
+    * `content/_cheatsheets` for Cheatsheets
+    * `content/_workshops` for Workshops
+
+* Write up the rest of your document:
+    * Pages on this website are written in Markdown, and rendered into pretty HTML by the webserver, which means its extremely easy to build pages!
+    * Take a look at the existing Markdown files in `content/_articles` for some inspiration on how these should be written.
+    * [Markdown quick reference](https://en.support.wordpress.com/markdown-quick-reference/)
+    * [Markdown detailed reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+Follow the instructions on the main README.md file on how to get a working version of the website running locally so you can test your new additions.
+
+Once you are happy with your new page, repeat the same steps as above to:
+* Add the changes to the local index `git add -A`
+* Commit the changes to your branch `git commit -m "<commit message>"`
+* Push the changes to your forked repo `git push origin <branch name>`
+* Make a pull request to the upstream repo
+
+Now we sit back, relax and wait for the contributors to approve your Pull Request.
+Check back later and if they haven't budged, maybe give them a nudge on #devops
